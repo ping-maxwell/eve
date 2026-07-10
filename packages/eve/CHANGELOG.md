@@ -1,5 +1,12 @@
 # eve
 
+## 0.22.5
+
+### Patch Changes
+
+- a325195: `limits.maxSubagentDepth` now defaults to `1` instead of `3`. Agents that rely on deeper default delegation should set `limits: { maxSubagentDepth: 3 }` (or another value) explicitly.
+- 4f86a21: Persist AI SDK approval-resume response messages in session history so approved local tool results survive later provider requests.
+
 ## 0.22.4
 
 ### Patch Changes
